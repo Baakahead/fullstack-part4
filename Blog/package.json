@@ -1,0 +1,37 @@
+{
+  "name": "blog_backend",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Baakahead/fullstack-part4#readme",
+  "bugs": {
+    "url": "https://github.com/Baakahead/fullstack-part4/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baakahead/fullstack-part4.git"
+  },
+  "license": "ISC",
+  "author": "Aashwin Vaidya",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test node --test",
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development node --watch index.js",
+    "build:ui": "rm -rf dist && cd C:/Users/vaidy/OneDrive/Desktop/FullStack/part2/phonebook && npm run build && cp -r dist C:/Users/vaidy/backend/phonebook",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0"
+  }
+}

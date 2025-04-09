@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRla3UiLCJpZCI6IjY3ZjYxYjEwNDFjMDdjNzU4OGVjYzQyNSIsImlhdCI6MTc0NDE4NTk5OH0.7nfwQtZncvlImUzK7ZgmVszWj5WScv8-YinG6IDTIl
+
+{
+    "title": "Not so serious rant about society",
+    "author": "Aashwin",
+    "url": "blah",
+    "likes": 132
+}
